@@ -5,28 +5,35 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-
-import { BookingService } from './Booking.service';
-
+import { CanActivateRouteGuard } from './can-activate-route.guard';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IgxDatePickerModule } from 'igniteui-angular';
-import { AboutComponent } from './about/about.component';
 import { IgxCalendarModule, IgxDialogModule } from 'igniteui-angular';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {CalendarModule} from 'primeng/calendar';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CalendarModule } from 'primeng/calendar';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductFilterPipe } from './product-list/product-filter.pipe';
+import { StarComponent } from './star/star.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    ProductListComponent,
+    ProductFilterPipe,
+    StarComponent,
+    ProductDetailComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
+    AppRoutingModule,
     JsonpModule,
     CalendarModule,
     ReactiveFormsModule,
@@ -36,13 +43,9 @@ import {CalendarModule} from 'primeng/calendar';
     IgxDatePickerModule,
     IgxDialogModule,
     HttpClientModule,
-    FlashMessagesModule.forRoot(),
-    RouterModule.forRoot([
-      { path: '', component: AboutComponent },
-      { path: 'about', component: AboutComponent }
-    ]),
+    FlashMessagesModule.forRoot()
   ],
-  providers: [BookingService],
+  providers: [CanActivateRouteGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

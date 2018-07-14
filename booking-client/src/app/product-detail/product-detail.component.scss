@@ -1,0 +1,14 @@
+.product-details{
+    margin-top: 50px;
+    &_header{
+        background-color: #007bff;
+        color: white;
+    }
+    &_btn{
+        color: white;
+        width: 80px;
+    }
+    &_footer{
+        color: white;
+    }
+}

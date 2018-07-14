@@ -1,0 +1,15 @@
+.welcome{
+    margin-top: 50px;
+    &_header{
+        color: white;
+        background: #007bff
+    }
+    &_details{
+        justify-content: center;
+    }
+    &_footer{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+}

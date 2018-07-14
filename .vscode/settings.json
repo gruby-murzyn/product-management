@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/app/**/*.js": true,
+        "**/*.map": true,
+        "**/*.spec.ts": true,
+        "**/.DS_Store": true
+    }
+}
