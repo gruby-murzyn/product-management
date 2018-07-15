@@ -28,6 +28,8 @@
     "angular2-flash-messages": "^2.0.5",
     "bootstrap": "^3.3.7",
     "bootstrap-select-v4": "^1.12.4",
+    "brew": "0.0.8",
+    "brew-tree": "0.0.2",
     "cities.json": "^1.1.2",
     "core-js": "^2.5.4",
     "igniteui-angular": "^6.1.0",
@@ -37,6 +39,7 @@
     "primeng": "^6.0.0",
     "rxjs": "^6.2.1",
     "rxjs-compat": "^6.2.1",
+    "tree-cli": "^0.4.12",
     "winston": "^3.0.0",
     "zone.js": "^0.8.26"
   },
