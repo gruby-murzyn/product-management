@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "grunt sass:production && ng build --aot --prod",
-    "start": "http-server -a localhost -p 8000 -c-1"
+    "start": "node server.js"
   },
   "private": true,
   "dependencies": {
