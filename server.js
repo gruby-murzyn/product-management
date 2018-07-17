@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/booking-client/dist/booking-client/index.html'));
+  res.sendFile(path.join(__dirname + '/product-client/dist/product-client/index.html'));
 });
 
 // Start Server
